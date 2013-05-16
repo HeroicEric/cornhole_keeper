@@ -4,6 +4,8 @@ describe User do
   it { should validate_presence_of :first_name }
   it { should validate_presence_of :last_name }
 
+  it { should have_and_belong_to_many :team_memberships }
+
   let(:first_name) { "Eric" }
   let(:last_name) { "Kelly" }
   let(:attributes) do
