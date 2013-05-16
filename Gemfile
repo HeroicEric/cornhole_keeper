@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'ember-rails'
-gem "ember-source", "1.0.0rc3.3"
+gem 'ember-source', '1.0.0.pre4.2'
 
 group :test, :development do
   gem 'rspec-rails'

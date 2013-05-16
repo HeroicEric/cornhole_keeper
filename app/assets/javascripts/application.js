@@ -19,3 +19,5 @@
 //= require cornhole_keeper
 
 CornholeKeeper = Ember.Application.create();
+
+//= require_tree .

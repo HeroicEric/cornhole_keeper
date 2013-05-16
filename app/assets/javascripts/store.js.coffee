@@ -1,4 +1,8 @@
 CornholeKeeper.Store = DS.Store.extend
-  revision: 11
+  revision: 12
   adapter: DS.RESTAdapter.create()
 
+CornholeKeeper.User = DS.Model.extend(
+  firstName: DS.attr("string")
+  lastName: DS.attr("string")
+)
