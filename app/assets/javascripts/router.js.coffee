@@ -1,3 +1,2 @@
-CornholeKeeper.Router.map (match)->
-  # match('/').to('index')
-
+CornholeKeeper.Router.map ->
+  @resource "users", path: "/users"

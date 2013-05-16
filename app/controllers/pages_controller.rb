@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
-  def welcome
+class UsersController < ApplicationController
+  def index
   end
 end

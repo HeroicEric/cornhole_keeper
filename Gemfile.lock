@@ -185,6 +185,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   database_cleaner
   ember-rails
+  ember-source (= 1.0.0rc3.3)
   factory_girl_rails
   jquery-rails
   launchy
