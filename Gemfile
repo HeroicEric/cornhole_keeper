@@ -34,6 +34,10 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'pry'
+
+  gem 'konacha'
+  gem 'ember-konacha-rails',
+    github: 'kristianmandrup/ember-konacha-rails'
 end
 
 # To use ActiveModel has_secure_password

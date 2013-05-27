@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/kristianmandrup/ember-konacha-rails.git
+  revision: e3d293d52598177de8fd0064f799c14c347ec9ad
+  specs:
+    ember-konacha-rails (0.1.1)
+      httparty (>= 0.9)
+      rails (>= 3.1)
+
+GIT
   remote: https://github.com/jonleighton/poltergeist.git
   revision: 7dee7758a03d4636c2a74b04a8b7bf8495319217
   specs:
@@ -63,6 +71,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    colorize (0.5.8)
     database_cleaner (1.0.1)
     diff-lcs (1.2.4)
     ember-data-source (0.0.5)
@@ -90,12 +99,21 @@ GEM
     handlebars-source (1.0.0.rc2)
     hike (1.2.2)
     http_parser.rb (0.5.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    konacha (2.7.0)
+      actionpack (>= 3.1, < 5)
+      capybara
+      colorize
+      railties (>= 3.1, < 5)
+      sprockets
     launchy (2.3.0)
       addressable (~> 2.3)
     mail (2.5.4)
@@ -104,6 +122,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.3)
+    multi_xml (0.5.3)
     nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -184,10 +203,12 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   database_cleaner
+  ember-konacha-rails!
   ember-rails
   ember-source (= 1.0.0.pre4.2)
   factory_girl_rails
   jquery-rails
+  konacha
   launchy
   pg
   poltergeist!
