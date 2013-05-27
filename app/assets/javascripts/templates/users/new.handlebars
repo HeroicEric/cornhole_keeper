@@ -1,0 +1,19 @@
+<h1>Create a New User</h1>
+
+<form>
+  <fieldset>
+    <ul class="form-fields">
+      <li>
+        <label for="first_name">First Name</label>
+        {{view Ember.TextField valueBinding="firstName" name="first_name"}}
+      </li>
+      <li>
+        <label for="last_name">Last Name</label>
+        {{view Ember.TextField valueBinding="lastName" name="last_name"}}
+      </li>
+    </ul>
+
+    <a href='#' {{action cancel}}>Cancel</a>
+    <a href='#' {{action save}}>Create</a>
+  </fieldset>
+</form>
