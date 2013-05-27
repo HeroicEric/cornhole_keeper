@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
     class_name: "TeamMembership",
     join_table: :team_memberships
 
-  def name
+  def full_name
     [first_name, last_name].join(" ")
   end
 end

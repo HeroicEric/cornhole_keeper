@@ -14,8 +14,8 @@ feature "user sees users index page", %q{
 
   it "sees all of the Users listed" do
     visit e(users_path)
-    expect(page).to have_content user1.first_name
-    expect(page).to have_content user2.first_name
+    expect(page).to have_content user1.full_name
+    expect(page).to have_content user2.full_name
   end
 end
 

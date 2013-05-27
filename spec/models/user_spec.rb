@@ -24,7 +24,7 @@ describe User do
     expect(user.last_name).to eql last_name
   end
 
-  it "has a name" do
-    expect(user.name).to eql "Eric Kelly"
+  it "has a full name" do
+    expect(user.full_name).to eql "Eric Kelly"
   end
 end
