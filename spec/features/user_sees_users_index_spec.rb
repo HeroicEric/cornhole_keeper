@@ -9,12 +9,13 @@ feature "user sees users index page", %q{
   # Acceptance Criteria:
   # I can see every user that is in the system
 
-  let!(:user) { FactoryGirl.create(:user) }
+  let!(:user1) { FactoryGirl.create(:user) }
+  let!(:user2) { FactoryGirl.create(:user) }
 
-  it "sees all of the Users" do
-    binding.pry
+  it "sees all of the Users listed" do
     visit e(users_path)
-    expect(page).to have_content user.first_name
+    expect(page).to have_content user1.first_name
+    expect(page).to have_content user2.first_name
   end
 end
 

@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :user do
-    first_name "MyString"
-    last_name "MyString"
+    sequence(:first_name) { |n| "First#{n}name" }
+    sequence(:last_name) { |n| "Last#{n}name" }
   end
 end
