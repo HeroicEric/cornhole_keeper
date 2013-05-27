@@ -13,12 +13,8 @@ feature "user sees users index page", %q{
   let!(:user2) { FactoryGirl.create(:user) }
 
   it "sees all of the Users listed" do
-    visit e(users_path)
+    visit ember(users_path)
     expect(page).to have_content user1.full_name
     expect(page).to have_content user2.full_name
   end
-end
-
-def e(path)
-  '/#' + path
 end
