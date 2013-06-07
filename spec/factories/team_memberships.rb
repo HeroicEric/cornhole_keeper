@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :team_membership do
+    association :team
+    association :user
   end
 end

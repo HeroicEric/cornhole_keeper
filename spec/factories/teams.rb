@@ -2,6 +2,6 @@
 
 FactoryGirl.define do
   factory :team do
-    sequence(:name) { |n| "Super Team Name" }
+    sequence(:name) { |n| "Super Team #{n} Name" }
   end
 end

@@ -5,7 +5,11 @@ class TeamsController < ApplicationController
     respond_with Team.all
   end
 
+  def show
+    respond_with Team.find(params[:id])
+  end
+
   def create
-    respond_with User.create(params[:user])
+    respond_with Team.create(params[:team])
   end
 end

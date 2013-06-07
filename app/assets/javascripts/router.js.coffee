@@ -3,3 +3,4 @@ CornholeKeeper.Router.map ->
     @route "new"
   @resource "teams", ->
     @route "new"
+  @resource "team", path: "/teams/:team_id"

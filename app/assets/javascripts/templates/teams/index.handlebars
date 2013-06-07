@@ -4,6 +4,6 @@
 
 <ul>
   {{#each controller}}
-    <li>Team: {{name}}!</li>
+    <li>{{#linkTo team this}}{{name}}{{/linkTo}}</li>
   {{/each}}
 </ul>

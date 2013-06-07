@@ -6,7 +6,7 @@ class Team < ActiveRecord::Base
 
   has_many :users,
     through: :team_memberships,
-    inverse_of: :team
+    inverse_of: :teams
 
   validates_presence_of :name
 end
