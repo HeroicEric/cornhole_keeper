@@ -13,7 +13,7 @@ feature "user views team index", %q{
     team1 = FactoryGirl.create(:team)
     team2 = FactoryGirl.create(:team)
 
-    visit teams_path
+    visit ember(teams_path)
 
     expect(page).to have_content team1.name
     expect(page).to have_content team2.name
