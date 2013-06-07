@@ -5,10 +5,6 @@ class Team < ActiveRecord::Base
     inverse_of: :team
 
   has_many :users,
-    through: :user_teams,
+    through: :team_memberships,
     inverse_of: :team
-
-  def name
-
-  end
 end

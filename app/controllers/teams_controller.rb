@@ -4,4 +4,8 @@ class TeamsController < ApplicationController
   def index
     respond_with Team.all
   end
+
+  def create
+    respond_with User.create(params[:user])
+  end
 end
