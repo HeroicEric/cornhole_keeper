@@ -1,6 +1,7 @@
 CornholeKeeper::Application.routes.draw do
   resources :teams, only: [:index, :show, :new, :create]
   resources :users, only: [:index, :show, :new, :create]
+  resources :team_memberships, only: [:index, :show, :new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

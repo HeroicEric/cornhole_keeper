@@ -7,7 +7,6 @@ feature "creating a new team process", %q{
 } do
 
   # Acceptance Criteria:
-  # I can choose up to two users to be a part of the team
   # I can choose a team name
 
   it "creates a new team" do
