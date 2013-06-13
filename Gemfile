@@ -22,7 +22,8 @@ end
 
 gem 'jquery-rails'
 gem 'ember-rails'
-gem 'ember-source', '1.0.0.pre4.2'
+gem 'ember-source', '1.0.0.rc5'
+gem 'handlebars-source', '1.0.0.rc4'
 
 group :test, :development do
   gem 'rspec-rails'

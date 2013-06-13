@@ -83,8 +83,8 @@ GEM
       ember-source
       execjs (>= 1.2)
       railties (>= 3.1)
-    ember-source (1.0.0.pre4.2)
-      handlebars-source (>= 1.0.0.rc2, < 1.0.0.rc3)
+    ember-source (1.0.0.rc5)
+      handlebars-source (= 1.0.0.rc4)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -96,7 +96,7 @@ GEM
       railties (>= 3.0.0)
     faye-websocket (0.4.7)
       eventmachine (>= 0.12.0)
-    handlebars-source (1.0.0.rc2)
+    handlebars-source (1.0.0.rc4)
     hike (1.2.2)
     http_parser.rb (0.5.3)
     httparty (0.11.0)
@@ -205,8 +205,9 @@ DEPENDENCIES
   database_cleaner
   ember-konacha-rails!
   ember-rails
-  ember-source (= 1.0.0.pre4.2)
+  ember-source (= 1.0.0.rc5)
   factory_girl_rails
+  handlebars-source (= 1.0.0.rc4)
   jquery-rails
   konacha
   launchy
