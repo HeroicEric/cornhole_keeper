@@ -1,0 +1,15 @@
+<h1>{{name}}</h1>
+
+{{#linkTo teams.index}}Back to Teams List{{/linkTo}}
+
+<h3>Team Members</h3>
+
+<ul class="team-members">
+  {{#each users}}
+   <li>{{fullName}}</li>
+  {{/each}}
+</ul>
+
+<h3>Add a Player</h3>
+
+{{render team_memberships.new}}
