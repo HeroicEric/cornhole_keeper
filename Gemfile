@@ -21,6 +21,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'ember-rails'
+gem 'ember-source', '1.0.0.rc5'
+gem 'handlebars-source', '1.0.0.rc4'
 
 group :test, :development do
   gem 'rspec-rails'
@@ -32,6 +35,10 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'pry'
+
+  gem 'konacha'
+  gem 'ember-konacha-rails',
+    github: 'kristianmandrup/ember-konacha-rails'
 end
 
 # To use ActiveModel has_secure_password

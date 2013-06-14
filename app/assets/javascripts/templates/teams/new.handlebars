@@ -1,0 +1,15 @@
+<h1>Create a New Team</h1>
+
+<form>
+  <fieldset>
+    <ul class="form-fields">
+      <li>
+        <label for="team[name]">Name</label>
+        {{view Ember.TextField valueBinding="name" name="team[name]"}}
+      </li>
+    </ul>
+
+    <a href='#' {{action cancel}}>Cancel</a>
+    <a href='#' {{action save}}>Create Team</a>
+  </fieldset>
+</form>

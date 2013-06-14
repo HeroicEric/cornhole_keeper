@@ -1,0 +1,11 @@
+<div class="add-a-team-member">
+  <h1>Create a New Team Membership for {{team.name}}</h1>
+
+  <ul>
+    {{#each userChoices}}
+      <li>
+        <button {{action addUserToTeam this}}>{{fullName}}</button>
+      </li>
+    {{/each}}
+  </ul>
+</div>

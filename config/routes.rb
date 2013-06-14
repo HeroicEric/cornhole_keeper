@@ -1,4 +1,8 @@
 CornholeKeeper::Application.routes.draw do
+  resources :teams, only: [:index, :show, :new, :create]
+  resources :users, only: [:index, :show, :new, :create]
+  resources :team_memberships, only: [:index, :show, :new, :create]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +52,7 @@ CornholeKeeper::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root to: 'dashboard#show'
+  root to: 'welcome#show'
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,9 @@
+<h1>All the Users</h1>
+
+{{#linkTo users.new}}Add User{{/linkTo}}
+
+<ul>
+  {{#each controller}}
+    <li>{{fullName}}</li>
+  {{/each}}
+</ul>
