@@ -1,10 +1,10 @@
-CornholeKeeper.TeamsIndexRoute = Ember.Route.extend
-  model: -> CornholeKeeper.Team.find()
+App.TeamsIndexRoute = Ember.Route.extend
+  model: -> App.Team.find()
 
-CornholeKeeper.TeamRoute = Ember.Route.extend
-  model: (params) -> CornholeKeeper.Team.find(params.team_id)
+App.TeamRoute = Ember.Route.extend
+  model: (params) -> App.Team.find(params.team_id)
 
-CornholeKeeper.TeamsNewRoute = Ember.Route.extend
-  model: -> CornholeKeeper.Team.createRecord()
+App.TeamsNewRoute = Ember.Route.extend
+  model: -> App.Team.createRecord()
   setupController: (controller, model) ->
     controller.set('content', model)

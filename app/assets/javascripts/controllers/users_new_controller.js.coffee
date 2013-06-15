@@ -1,4 +1,4 @@
-CornholeKeeper.UsersNewController = Ember.ObjectController.extend
+App.UsersNewController = Ember.ObjectController.extend
   save: ->
     @get('store').commit()
     @transitionToRoute('users.index')
