@@ -39,6 +39,8 @@ group :test, :development do
   gem 'konacha'
   gem 'ember-konacha-rails',
     github: 'kristianmandrup/ember-konacha-rails'
+
+  gem 'qunit-rails'
 end
 
 # To use ActiveModel has_secure_password

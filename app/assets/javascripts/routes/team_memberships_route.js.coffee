@@ -1,4 +1,4 @@
-CornholeKeeper.TeamMembershipsNewRoute = Ember.Route.extend
-  model: -> CornholeKeeper.TeamMembership.createRecord()
+App.TeamMembershipsNewRoute = Ember.Route.extend
+  model: -> App.TeamMembership.createRecord()
   setupController: (controller, model) ->
     controller.set('model', model)

@@ -1,3 +1,3 @@
-CornholeKeeper.TeamMembership = DS.Model.extend
-  team: DS.belongsTo('CornholeKeeper.Team')
-  user: DS.belongsTo('CornholeKeeper.User')
+App.TeamMembership = DS.Model.extend
+  team: DS.belongsTo('App.Team')
+  user: DS.belongsTo('App.User')

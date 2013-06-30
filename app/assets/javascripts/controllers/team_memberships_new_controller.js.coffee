@@ -1,4 +1,4 @@
-CornholeKeeper.TeamMembershipsNewController = Ember.ObjectController.extend
+App.TeamMembershipsNewController = Ember.ObjectController.extend
   needs: "team",
   selectedUser: null,
 
@@ -7,7 +7,7 @@ CornholeKeeper.TeamMembershipsNewController = Ember.ObjectController.extend
   ).property(),
 
   userChoices: (->
-    CornholeKeeper.User.find()
+    App.User.find()
   ).property(),
 
   addUserToTeam: (user) ->

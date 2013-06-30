@@ -1,4 +1,4 @@
-CornholeKeeper.User = DS.Model.extend
+App.User = DS.Model.extend
   firstName: DS.attr("string")
   lastName: DS.attr("string")
 
