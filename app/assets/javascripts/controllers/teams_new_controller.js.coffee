@@ -1,4 +1,4 @@
-CornholeKeeper.TeamsNewController = Ember.ObjectController.extend
+App.TeamsNewController = Ember.ObjectController.extend
   save: ->
     @get('store').commit()
     @transitionToRoute('teams.index')

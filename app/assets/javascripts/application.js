@@ -18,6 +18,6 @@
 //= require_self
 //= require cornhole_keeper
 
-CornholeKeeper = Ember.Application.create();
+App = Ember.Application.create();
 
 //= require_tree .

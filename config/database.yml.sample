@@ -5,8 +5,8 @@ development:
   encoding: unicode
   database: cornhole_keeper_development
   pool: 5
-  username: root
-  password: password
+  username:
+  password:
   host: 127.0.0.1
 
 test:
@@ -14,7 +14,7 @@ test:
   encoding: unicode
   database: cornhole_keeper_test
   pool: 5
-  username: root
-  password: password
+  username:
+  password:
   host: 127.0.0.1
 
